@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7046859894566227625}
   - component: {fileID: 851298314231085870}
   - component: {fileID: 5258192167259750225}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: BoxWooden
   m_TagString: Cube
   m_Icon: {fileID: 0}
