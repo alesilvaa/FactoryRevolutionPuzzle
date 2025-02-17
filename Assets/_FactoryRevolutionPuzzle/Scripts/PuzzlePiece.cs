@@ -71,5 +71,10 @@ public class PuzzlePiece : MonoBehaviour
         trans.rotation = targetRotation;
         trans.position = startPosition;
         isAnimating = false;
+        
+        //llamar al evento para que verifique si la rotacion es correcta
+        float yRotation = trans.eulerAngles.y;
+        EventsManager.Instance.IsCorrectRadius(yRotation);
+
     }
 }

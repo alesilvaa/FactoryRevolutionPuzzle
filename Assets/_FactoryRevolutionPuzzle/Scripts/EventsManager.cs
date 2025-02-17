@@ -35,13 +35,19 @@ public class EventsManager : MonoBehaviour
     }
 
     public event Action OnAllBoxesInTruck;
+    public event Action<float> OnIsCorrectRadius;
     public event Action OnWinPanel;
     public event Action OnLosePanel;
 
 
-    public void RaiseAllBoxesInTruck()
+    public void AllBoxesInTruck()
     {
         OnAllBoxesInTruck?.Invoke();
+    }
+
+    public void IsCorrectRadius(float radius)
+    {
+        OnIsCorrectRadius?.Invoke(radius);
     }
    
 }
