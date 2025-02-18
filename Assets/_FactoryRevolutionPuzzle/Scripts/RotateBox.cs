@@ -31,7 +31,7 @@ public class RotateBox : MonoBehaviour
         if (other.CompareTag("Cube"))
         {
             // Aquí se utiliza el vector asignado en Start()
-            other.GetComponent<MoverPorWaypoints>().direction = direction;
+            other.GetComponent<MoverPorWaypoints>().Direction = direction;
         }
     }
 

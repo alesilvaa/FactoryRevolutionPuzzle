@@ -16,6 +16,7 @@ public class ConveyorController : MonoBehaviour
     void Start()
     {
         AnimateConveyor();
+        CheckCorrectOrderByName();
     }
 
     private void AnimateConveyor()
@@ -50,7 +51,57 @@ public class ConveyorController : MonoBehaviour
     }
     public void OrdenarConveyorsPorJerarquia()
     {
+        // Ordena la lista según el índice de jerarquía de cada objeto
         correctsConveyors.Sort((a, b) => a.transform.GetSiblingIndex().CompareTo(b.transform.GetSiblingIndex()));
+        
+        // Verifica si el orden es el correcto y, de ser así, activa el panel de victoria.
+        CheckCorrectOrder();
+    }
+    
+    
+    private void CheckCorrectOrder()
+    {
+        // Primero se verifica que ambas listas tengan la misma cantidad de elementos
+        if (conveyors.Count != correctsConveyors.Count)
+            return;
+        
+        // Se compara cada elemento en el mismo índice
+        for (int i = 0; i < conveyors.Count; i++)
+        {
+            if (conveyors[i] != correctsConveyors[i].gameObject)
+                return;
+        }
+
+        StartCoroutine(DelayShowWinPanel());
+
+    }
+
+    private IEnumerator DelayShowWinPanel()
+    {
+        yield return new WaitForSeconds(2);
+        // Si se llega hasta aquí, ambas listas son iguales en cantidad y orden
+        EventsManager.Instance.WinPanel();
+    }
+    
+    private void CheckCorrectOrderByName()
+    {
+        
+        // Compara cada objeto por su nombre
+        for (int i = 0; i < conveyors.Count; i++)
+        {
+            if (conveyors[i].name != correctsConveyors[i].gameObject.name)
+            {
+                return;
+            }
+            else if (conveyors[i].name == correctsConveyors[i].gameObject.name)
+            {
+                Debug.Log($" primero {conveyors[i].name} segundo {correctsConveyors[i].gameObject.name}");
+                correctsConveyors[i].IsReadyToScrolling();
+            }
+        }
+
+        // Si se llega hasta aquí, todos los nombres coinciden
+        StartCoroutine(DelayShowWinPanel());
     }
     
 }

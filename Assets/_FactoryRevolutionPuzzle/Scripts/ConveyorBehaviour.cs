@@ -14,7 +14,14 @@ public class ConveyorBehaviour : MonoBehaviour
     [SerializeField] private ScrollBaseMapY scrollBaseMapY;
     [SerializeField] private float scrollSpeedCorrect = -0.5f;
     [SerializeField] private float scrollSpeedIncorrect = 0.5f;
-    
+    private bool isReadyToScroll;
+
+    public bool IsReadyToScroll
+    {
+        get => isReadyToScroll;
+        set => isReadyToScroll = value;
+    }
+
 
     // Propiedad para acceder al valor de correctConveyor desde otros scripts
     public bool IsCorrectConveyor 
@@ -37,7 +44,10 @@ public class ConveyorBehaviour : MonoBehaviour
         {
             correctConveyor = true;
             conveyorController.AddCorrectConveyor(this);
-            scrollBaseMapY.ScrollSpeed = scrollSpeedCorrect;
+            /*if (isReadyToScroll)
+            {
+                scrollBaseMapY.ScrollSpeed = scrollSpeedCorrect;
+            }*/
             gameObject.GetComponent<BoxCollider>().isTrigger = false;
             rotateBox.GetComponent<BoxCollider>().enabled = true;
             rotateBox.CheckDirection(correctDirection);
@@ -46,7 +56,9 @@ public class ConveyorBehaviour : MonoBehaviour
         {
             correctConveyor = false;
             conveyorController.RemoveCorrectConveyor(this);
+            
             scrollBaseMapY.ScrollSpeed = scrollSpeedIncorrect;
+            
             gameObject.GetComponent<BoxCollider>().isTrigger = false;
             rotateBox.GetComponent<BoxCollider>().enabled = true;
             rotateBox.CheckDirection(incorrectDirection);
@@ -54,13 +66,21 @@ public class ConveyorBehaviour : MonoBehaviour
         else
         {
             correctConveyor = false;
-            scrollBaseMapY.ScrollSpeed = 0;
+            /*if (!isReadyToScroll)
+            {
+                scrollBaseMapY.ScrollSpeed = 0;
+            }*/
             conveyorController.RemoveCorrectConveyor(this);
             gameObject.GetComponent<BoxCollider>().isTrigger = true;
             rotateBox.GetComponent<BoxCollider>().enabled = false;
         }
     }
 
+
+    public void IsReadyToScrolling()
+    {
+        scrollBaseMapY.ScrollSpeed = scrollSpeedIncorrect;
+    }
     
     
     

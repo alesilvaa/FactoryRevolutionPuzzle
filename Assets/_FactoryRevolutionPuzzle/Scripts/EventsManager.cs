@@ -49,5 +49,15 @@ public class EventsManager : MonoBehaviour
     {
         OnIsCorrectRadius?.Invoke(radius);
     }
+    
+    public void WinPanel()
+    {
+        OnWinPanel?.Invoke();
+    }
+    
+    public void LosePanel()
+    {
+        OnLosePanel?.Invoke();
+    }
    
 }
