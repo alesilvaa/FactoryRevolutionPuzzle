@@ -6,6 +6,12 @@ public class ScrollBaseMapY : MonoBehaviour
     [Header("Velocidad de desplazamiento")]
     [SerializeField] private float scrollSpeed = 0.1f;
 
+    public float ScrollSpeed
+    {
+        get => scrollSpeed;
+        set => scrollSpeed = value;
+    }
+
     // Nombre de la propiedad en el URP Lit Shader (por defecto es "_BaseMap")
     [SerializeField] private string texturePropertyName = "_BaseMap";
 

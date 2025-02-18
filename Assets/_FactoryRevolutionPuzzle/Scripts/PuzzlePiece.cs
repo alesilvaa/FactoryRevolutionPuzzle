@@ -1,8 +1,10 @@
+using System;
 using System.Collections;
 using UnityEngine;
 
 public class PuzzlePiece : MonoBehaviour
 {
+    [SerializeField] private ConveyorBehaviour conveyorBehaviour;
     [Header("Parámetros de Rotación")]
     public float rotationDuration = 0.5f;
 
@@ -11,6 +13,12 @@ public class PuzzlePiece : MonoBehaviour
     public float jumpDuration = 0.2f;
     
     private bool isAnimating = false;
+
+
+    private void Start()
+    {
+        conveyorBehaviour = gameObject.GetComponent<ConveyorBehaviour>();
+    }
 
     // Se invoca al hacer clic/tocar sobre el objeto (requiere Collider)
     private void OnMouseDown()
@@ -74,7 +82,7 @@ public class PuzzlePiece : MonoBehaviour
         
         //llamar al evento para que verifique si la rotacion es correcta
         float yRotation = trans.eulerAngles.y;
-        EventsManager.Instance.IsCorrectRadius(yRotation);
+        conveyorBehaviour.IsCorrectRadius(yRotation);
 
     }
 }

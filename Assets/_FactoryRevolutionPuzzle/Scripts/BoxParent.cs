@@ -1,25 +1,26 @@
 using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class BoxParent : MonoBehaviour
 {
-    [SerializeField] private GameObject prefabBox;         // Prefab del cubo a instanciar
-    [SerializeField] private List<GameObject> boxes = new List<GameObject>(); // Lista para almacenar los cubos instanciados
-    [SerializeField] private int cantidadCubos = 4;           // Cantidad de cubos a instanciar
+    [SerializeField] private ObjectPool objectPool;   // Referencia al pool
 
     private void Start()
     {
-        StartCoroutine(InstanciarCubos());
+        StartCoroutine(ActivarCubos());
     }
 
-    private IEnumerator InstanciarCubos()
+    private IEnumerator ActivarCubos()
     {
-        for (int i = 0; i < cantidadCubos; i++)
+        for (int i = 0; i < objectPool.PoolSize; i++)
         {
-            GameObject nuevoCubo = Instantiate(prefabBox, transform.position, Quaternion.identity);
-            boxes.Add(nuevoCubo);
-            yield return new WaitForSeconds(.4f); // Espera 1 segundo antes de instanciar el siguiente cubo
+            GameObject box = objectPool.GetObject();
+            if (box != null)
+            {
+                box.transform.position = transform.position;
+                box.SetActive(true);
+            }
+            yield return new WaitForSeconds(0.6f); // Espera antes de activar la siguiente
         }
     }
 }

@@ -7,6 +7,10 @@ TagManager:
   - Cube
   - Missile
   - FxTemporaire
+  - +x
+  - -x
+  - +z
+  - -z
   layers:
   - Default
   - TransparentFX
