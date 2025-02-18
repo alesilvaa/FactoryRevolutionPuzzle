@@ -73,3 +73,23 @@ crashlytics-build.properties
 # Temporary auto-generated Android Assets
 /[Aa]ssets/[Ss]treamingAssets/aa.meta
 /[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# Archivos de imagen y audio grandes
+*.psd
+*.tga
+*.tif
+*.tiff
+*.bmp
+*.wav
+*.mp3
+*.ogg
+*.flac
+
+# Videos y modelos
+*.avi
+*.mov
+*.mp4
+*.mkv
+*.fbx
+*.obj
+
