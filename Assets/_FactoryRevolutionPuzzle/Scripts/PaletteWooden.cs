@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -11,6 +12,7 @@ public class PaletteWooden : MonoBehaviour
         if (other.CompareTag("Cube"))
         {
             other.gameObject.SetActive(false);
+            StartCoroutine( DelaytoDestroy(other.gameObject, .5f));
             /*if (currentIndex < positionsToMove.Count)
             {
                 other.GetComponent<MoverPorWaypoints>().enabled = false;
@@ -26,5 +28,11 @@ public class PaletteWooden : MonoBehaviour
                 Debug.LogWarning("No hay más posiciones disponibles en la lista.");
             }*/
         }
+    }
+
+    private IEnumerator DelaytoDestroy(GameObject go, float delay)
+    {
+        yield return new WaitForSeconds(delay);
+        Destroy(go);
     }
 }

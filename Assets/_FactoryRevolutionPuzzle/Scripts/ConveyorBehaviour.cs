@@ -68,6 +68,28 @@ public class ConveyorBehaviour : MonoBehaviour
             rotateBox.GetComponent<BoxCollider>().enabled = false;
         }
     }
+    public void IsCorrectRadiusForScrolling(float radius)
+    {
+        float tolerance = 0.01f;
+        if (Mathf.Abs(Mathf.DeltaAngle(radius, correctConveyorRadius)) < tolerance)
+        {
+            if (isReadyToScroll)
+            {
+                scrollBaseMapY.ScrollSpeed = scrollSpeedCorrect;
+            }
+        }
+        else if (Mathf.Abs(Mathf.DeltaAngle(radius, incorrectConveyorRadius)) < tolerance)
+        {
+            if (isReadyToScroll)
+            {
+                scrollBaseMapY.ScrollSpeed = scrollSpeedIncorrect;   
+            }
+        }
+        else
+        {
+            scrollBaseMapY.ScrollSpeed = 0;
+        }
+    }
     
 
     private void OnCollisionEnter(Collision other)
@@ -77,7 +99,7 @@ public class ConveyorBehaviour : MonoBehaviour
             Debug.Log($"ConveyorBehaviour  {other.gameObject.name}");
             isReadyToScroll = true;
             float yRotation = transform.eulerAngles.y;
-            IsCorrectRadius(yRotation);
+            IsCorrectRadiusForScrolling(yRotation);
         }
     }
 }

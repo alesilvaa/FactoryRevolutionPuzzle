@@ -14,6 +14,14 @@ public class PuzzlePiece : MonoBehaviour
     
     private bool isAnimating = false;
 
+    private bool stopTap = false;
+
+    public bool StopTap
+    {
+        get => stopTap;
+        set => stopTap = value;
+    }
+
 
     private void Start()
     {
@@ -23,10 +31,13 @@ public class PuzzlePiece : MonoBehaviour
     // Se invoca al hacer clic/tocar sobre el objeto (requiere Collider)
     private void OnMouseDown()
     {
-        if (!isAnimating)
+        if (!stopTap)
         {
-            StartCoroutine(AnimatePiece());
-            EventsManager.Instance.TapConveyor();
+            if (!isAnimating)
+            {
+                StartCoroutine(AnimatePiece());
+                EventsManager.Instance.TapConveyor();
+            }
         }
     }
 

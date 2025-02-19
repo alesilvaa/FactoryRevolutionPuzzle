@@ -80,7 +80,7 @@ public class ConveyorController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         // Si se llega hasta aquí, ambas listas son iguales en cantidad y orden
-        //qEventsManager.Instance.WinPanel();
+        EventsManager.Instance.WinPanel();
     }
     
     private void CheckCorrectOrderByName()
@@ -103,5 +103,12 @@ public class ConveyorController : MonoBehaviour
         // Si se llega hasta aquí, todos los nombres coinciden
         StartCoroutine(DelayShowWinPanel());
     }
-    
+
+    public void StopTapConveyor()
+    {
+        foreach (var con in conveyors)
+        {
+            con.GetComponent<PuzzlePiece>().StopTap = true;
+        }
+    }
 }

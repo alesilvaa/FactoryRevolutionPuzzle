@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 1.unity
+    guid: 3b21c8bfe3b3b4339a3ddb37cc56b2fc
+  - enabled: 1
+    path: Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 2.unity
+    guid: 52b481bb709574f849df06fd1870d008
   m_configObjects: {}

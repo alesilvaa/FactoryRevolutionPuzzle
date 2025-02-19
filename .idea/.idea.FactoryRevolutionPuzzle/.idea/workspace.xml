@@ -6,19 +6,17 @@
   <component name="ChangeListManager">
     <list default="true" id="85623aea-b294-476d-92ae-fca6676600a1" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.FactoryRevolutionPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FactoryRevolutionPuzzle/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Component_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Component_1.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_Demo_UI/Stats_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_Demo_UI/Stats_Player.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Ramp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Ramp.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/RampCurve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/RampCurve.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl1.unity" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Canvas.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Canvas.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 1.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 1.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 2.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl 2.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/BoxParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/BoxParent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorBehaviour.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorController.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/EventsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/EventsManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PaletteWooden.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PaletteWooden.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PuzzlePiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PuzzlePiece.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UIMANAGER.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UIMANAGER.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UiWinLose.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UiWinLose.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/EditorBuildSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -103,7 +101,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1739970211848</updated>
-      <workItem from="1739970213513" duration="5453000" />
+      <workItem from="1739970213513" duration="8709000" />
     </task>
     <servers />
   </component>

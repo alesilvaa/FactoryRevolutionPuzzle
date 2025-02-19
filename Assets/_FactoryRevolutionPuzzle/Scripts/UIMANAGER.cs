@@ -7,26 +7,16 @@ using UnityEngine.Serialization;
 
 public class UIMANAGER : MonoBehaviour
 {
-    public static UIMANAGER instance;
     [SerializeField] private GameObject _winPanel;
     [SerializeField] private GameObject _losePanel;
     [SerializeField] private TextMeshProUGUI _attempsText;
     [SerializeField] private int _attemps = 20;
+    [Header("Conveyor belt Controller")]
+    [SerializeField] private ConveyorController _conveyorController;
+    public bool hasWon = false;
+    public bool hasLost = false;
     
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-            DontDestroyOnLoad(gameObject);
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
-
-
+    
     private void Start()
     {
         EventsManager.Instance.OnWinPanel += ShowWinPanel;
@@ -46,12 +36,24 @@ public class UIMANAGER : MonoBehaviour
 
     private void ShowWinPanel()
     {
-        _winPanel.SetActive(true);
+        if (!hasLost)
+        {
+            hasWon = true;
+            _winPanel.SetActive(true);
+            _winPanel.GetComponent<UiWinLose>().ShowWinLoseUI();
+            StopTapConveyor();
+        }
     }
 
     private void ShowLosePanel()
     {
-        _losePanel.SetActive(true);
+        if (!hasWon)
+        {
+            hasLost = true;
+            _losePanel.SetActive(true);
+            _losePanel.GetComponent<UiWinLose>().ShowWinLoseUI();
+            StopTapConveyor();
+        }
     }
 
     private void HideWinPanel()
@@ -72,5 +74,23 @@ public class UIMANAGER : MonoBehaviour
             EventsManager.Instance.LosePanel();
         }
         _attempsText.text = _attemps.ToString();
+    }
+
+
+    public void NextLevel()
+    {
+        GameManager.Instance.NextLevel();
+        HideWinPanel();
+    }
+
+    public void RestartLevel()
+    {
+        GameManager.Instance.RestartLevel();
+        HideLosePanel();
+    }
+
+    private void StopTapConveyor()
+    {
+        _conveyorController.StopTapConveyor();
     }
 }

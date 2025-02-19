@@ -22,5 +22,6 @@ public class BoxParent : MonoBehaviour
             }
             yield return new WaitForSeconds(0.6f); // Espera antes de activar la siguiente
         }
+        EventsManager.Instance.LosePanel();
     }
 }

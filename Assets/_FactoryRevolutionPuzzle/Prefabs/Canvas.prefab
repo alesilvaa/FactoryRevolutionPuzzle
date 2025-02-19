@@ -174,10 +174,10 @@ RectTransform:
   - {fileID: 3162077975738042681}
   - {fileID: 442942701710462273}
   - {fileID: 2615385209723608031}
+  - {fileID: 4872751124945899674}
   - {fileID: 1705800291385779546}
   - {fileID: 4163611220258362510}
   - {fileID: 3752699970907801876}
-  - {fileID: 4872751124945899674}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -263,6 +263,7 @@ MonoBehaviour:
   _winPanel: {fileID: 1495343714068436789}
   _losePanel: {fileID: 6928741493940968615}
   _attempsText: {fileID: 9146340511062312212}
+  _attemps: 20
 --- !u!1 &702126914095896716
 GameObject:
   m_ObjectHideFlags: 0
@@ -651,7 +652,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 9184801474256457326}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4168667761695374373}
+        m_TargetAssemblyTypeName: UIMANAGER, Assembly-CSharp
+        m_MethodName: NextLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1230519344458584648
 GameObject:
   m_ObjectHideFlags: 0
@@ -797,13 +810,14 @@ GameObject:
   - component: {fileID: 1705800291385779546}
   - component: {fileID: 6460337470513159821}
   - component: {fileID: 940653211517538194}
+  - component: {fileID: 5633857412961611073}
   m_Layer: 5
   m_Name: PanelWin
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &1705800291385779546
 RectTransform:
   m_ObjectHideFlags: 0
@@ -862,6 +876,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &5633857412961611073
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1495343714068436789}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8023ad5d91ad140449ecfe733bb1f83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconWinLose: {fileID: 6143764388469900410}
+  BtnNextTryAgain: {fileID: 1146230172410667389}
 --- !u!1 &1527728909295307540
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,7 +1259,7 @@ GameObject:
   - component: {fileID: 1433314102550876860}
   - component: {fileID: 1770138057284265173}
   m_Layer: 5
-  m_Name: BtnNext
+  m_Name: BtnTryAgain
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1338,7 +1366,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 1433314102550876860}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 4168667761695374373}
+        m_TargetAssemblyTypeName: UIMANAGER, Assembly-CSharp
+        m_MethodName: RestartLevel
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4900576498630783828
 GameObject:
   m_ObjectHideFlags: 0
@@ -2012,6 +2052,7 @@ GameObject:
   - component: {fileID: 4163611220258362510}
   - component: {fileID: 576646934109218199}
   - component: {fileID: 3253318143541779027}
+  - component: {fileID: 1557352481394996612}
   m_Layer: 5
   m_Name: PanelLose
   m_TagString: Untagged
@@ -2077,6 +2118,20 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &1557352481394996612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6928741493940968615}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8023ad5d91ad140449ecfe733bb1f83a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  iconWinLose: {fileID: 5972708696492432508}
+  BtnNextTryAgain: {fileID: 4671015607105103245}
 --- !u!1 &7129270794407614223
 GameObject:
   m_ObjectHideFlags: 0
