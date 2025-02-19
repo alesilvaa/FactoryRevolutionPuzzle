@@ -4,21 +4,54 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="85623aea-b294-476d-92ae-fca6676600a1" name="Changes" comment="" />
+    <list default="true" id="85623aea-b294-476d-92ae-fca6676600a1" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.FactoryRevolutionPuzzle/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.FactoryRevolutionPuzzle/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Component_1.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_DemoScene_Panels/Component_1.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_Demo_UI/Stats_Player.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/GUI PRO Kit - Casual Game/Prefabs/Prefabs_Demo_UI/Stats_Player.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TextMesh Pro/Resources/Fonts &amp; Materials/LiberationSans SDF - Fallback.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Ramp.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/Ramp.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/RampCurve.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Prefabs/RampCurve.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl1.unity" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scenes/Lvl1.unity.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorBehaviour.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorBehaviour.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ConveyorController.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/EventsManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/EventsManager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PaletteWooden.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PaletteWooden.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PuzzlePiece.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/PuzzlePiece.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UIMANAGER.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/UIMANAGER.cs" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="file://$PROJECT_DIR$/Assets/_FactoryRevolutionPuzzle/Scripts/ObjectPool.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;
+  <component name="ProjectColorInfo"><![CDATA[{
+  "associatedIndex": 4
+}]]></component>
+  <component name="ProjectId" id="2tGErZDDk9P2WxU8OI4nwOf7ryQ" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.git.unshallow": "true",
+    "git-widget-placeholder": "main",
+    "node.js.detected.package.eslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
-  <component name="RunManager">
+}]]></component>
+  <component name="RunManager" selected="Standalone Player.Start Unity">
     <configuration name="Start Unity" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="/Applications/Unity/Hub/Editor/2022.3.53f1/Unity.app/Contents/MacOS/Unity" />
       <option name="PROGRAM_PARAMETERS" value="-projectPath $PROJECT_DIR$ -debugCodeOptimization" />
@@ -35,10 +68,56 @@
       <option name="USE_EXTERNAL_CONSOLE" value="0" />
       <method v="2" />
     </configuration>
+    <configuration name="Attach to Unity Editor &amp; Play" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="UNITY_ATTACH_AND_PLAY" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+      <option name="allowRunningInParallel" value="false" />
+      <option name="listenPortForConnections" value="false" />
+      <option name="pid" />
+      <option name="projectPathOnTarget" />
+      <option name="runtimes">
+        <list />
+      </option>
+      <option name="selectedOptions">
+        <list />
+      </option>
+      <method v="2" />
+    </configuration>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="85623aea-b294-476d-92ae-fca6676600a1" name="Changes" comment="" />
+      <created>1739970211848</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1739970211848</updated>
+      <workItem from="1739970213513" duration="5453000" />
+    </task>
     <servers />
   </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="true" />
+  <component name="UnityProjectDiscoverer">
+    <option name="hasUnityReference" value="true" />
+    <option name="unityProject" value="true" />
+    <option name="unityProjectFolder" value="true" />
+  </component>
   <component name="UnityUnitTestConfiguration" currentTestLauncher="Both" />
+  <component name="VcsManagerConfiguration">
+    <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
+  </component>
 </project>

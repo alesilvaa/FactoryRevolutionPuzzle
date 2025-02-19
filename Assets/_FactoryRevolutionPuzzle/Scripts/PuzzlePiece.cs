@@ -26,6 +26,7 @@ public class PuzzlePiece : MonoBehaviour
         if (!isAnimating)
         {
             StartCoroutine(AnimatePiece());
+            EventsManager.Instance.TapConveyor();
         }
     }
 

@@ -10,7 +10,8 @@ public class PaletteWooden : MonoBehaviour
     {
         if (other.CompareTag("Cube"))
         {
-            if (currentIndex < positionsToMove.Count)
+            other.gameObject.SetActive(false);
+            /*if (currentIndex < positionsToMove.Count)
             {
                 other.GetComponent<MoverPorWaypoints>().enabled = false;
                 // Mueve el cubo a la posición y rotación definidas en la lista
@@ -23,7 +24,7 @@ public class PaletteWooden : MonoBehaviour
             else
             {
                 Debug.LogWarning("No hay más posiciones disponibles en la lista.");
-            }
+            }*/
         }
     }
 }

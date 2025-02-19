@@ -39,6 +39,8 @@ public class EventsManager : MonoBehaviour
     public event Action OnWinPanel;
     public event Action OnLosePanel;
 
+    public event Action OnTapConveyor;
+
 
     public void AllBoxesInTruck()
     {
@@ -59,5 +61,9 @@ public class EventsManager : MonoBehaviour
     {
         OnLosePanel?.Invoke();
     }
-   
+
+    public void TapConveyor()
+    {
+        OnTapConveyor?.Invoke();
+    }
 }

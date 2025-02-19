@@ -80,7 +80,7 @@ public class ConveyorController : MonoBehaviour
     {
         yield return new WaitForSeconds(2);
         // Si se llega hasta aquí, ambas listas son iguales en cantidad y orden
-        EventsManager.Instance.WinPanel();
+        //qEventsManager.Instance.WinPanel();
     }
     
     private void CheckCorrectOrderByName()
@@ -95,8 +95,8 @@ public class ConveyorController : MonoBehaviour
             }
             else if (conveyors[i].name == correctsConveyors[i].gameObject.name)
             {
-                Debug.Log($" primero {conveyors[i].name} segundo {correctsConveyors[i].gameObject.name}");
-                correctsConveyors[i].IsReadyToScrolling();
+                Debug.Log($" primero {conveyors[i].name} y segundo {correctsConveyors[i].gameObject.name}");
+                //correctsConveyors[i].IsReadyToScrolling();
             }
         }
 
